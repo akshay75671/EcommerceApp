@@ -21,34 +21,9 @@ const AppNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="ProductList" screenOptions={{ headerShown: false }}>
-        <Stack.Screen
-          name="ProductList"
-          component={ProductListScreen}
-          // options={({ navigation }) => ({
-          //   title: 'Products',
-          //   headerRight: () => {
-          //     const { items } = useCartStore(); // Access cart items from store
-          //     const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
-
-          //     return (
-          //       <TouchableOpacity
-          //         style={{ marginRight: 15 }}
-          //         onPress={() => navigation.navigate('Cart')}
-          //       >
-          //         <Text style={{ fontSize: 18 }}>🛒 ({totalItems})</Text>
-          //       </TouchableOpacity>
-          //     );
-          //   },
-          // })}
-        />
-        <Stack.Screen
-          name="ProductDetail"
-          component={ProductDetailScreen}
-          options={({ route }) => ({
-            title: route.params.productId ? 'Product Details' : 'Details',
-          })}
-        />
-        <Stack.Screen name="Cart" component={CartScreen} options={{ title: 'Your Cart' }} />
+        <Stack.Screen name="ProductList" component={ProductListScreen} />
+        <Stack.Screen name="ProductDetail" component={ProductDetailScreen} />
+        <Stack.Screen name="Cart" component={CartScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

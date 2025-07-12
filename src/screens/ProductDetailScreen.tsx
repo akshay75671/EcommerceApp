@@ -157,7 +157,7 @@ const ProductDetailScreen = ({ route, navigation }: ProductDetailScreenProps) =>
 const styles = StyleSheet.create({
   fullScreenContainer: {
     flex: 1,
-    backgroundColor: COLORS.background
+    backgroundColor: COLORS.white
   },
   centered: {
     flex: 1,
@@ -308,7 +308,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#555',
     lineHeight: 20,
-    marginBottom: 30,
+    marginBottom: 100,
   },
   readMoreText: {
     color: '#007bff', 

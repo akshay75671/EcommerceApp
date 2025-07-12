@@ -58,7 +58,7 @@ const CartScreen = ({ navigation }: ProductDetailScreenProps) => {
             <View style={styles.bottomActions}>
               <Text style={styles.totalText}>${totalPrice.toFixed(2)}</Text>
       
-              <TouchableOpacity style={styles.addToCartButton}>
+              <TouchableOpacity style={styles.addToCartButton} onPress={() => {}}>
                 <Text style={styles.addToCartButtonText}>Proceed to Checkout</Text>
               </TouchableOpacity>
             </View>
